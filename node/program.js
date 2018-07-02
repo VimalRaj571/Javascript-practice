@@ -31,10 +31,10 @@
 //Task 3
 
 var fs = require('fs');
-var line = undefined;
+var line = process.argv[2];
 
 function numberOfLines(){
-	fs.readFile(process.argv[2],function doneReading(err, fileContent){
+	fs.readFile(line,function doneReading(err, fileContent){
 	return line.toString().split('\n').length-1 
 	})
 }
