@@ -1,7 +1,7 @@
 var fs = require('fs')
 var path = require('path')
 var direc = process.argv[2]
-var ext = '.'+process[3]
+var ext = '.' +process.argv[3]
 
 fs.readdir(direc, function(err,files){
 	if(err){
